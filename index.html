@@ -61,20 +61,9 @@
         productVersion: "0.0.1",
         showBanner: unityShowBanner,
         devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
-        webglContextAttributes: {
-          preserveDrawingBuffer: false,
-          powerPreference: "high-performance",
-          failIfMajorPerformanceCaveat: false,
-          antialias: true,
-          depth: true,
-          stencil: true,
-          alpha: false,
-          desynchronized: false
-        }
       };
 
       config.matchWebGLToCanvasSize = true;
-      config.autoSyncPersistentDataPath = true;
 
       document.querySelector("#unity-loading-bar").style.display = "block";
 
